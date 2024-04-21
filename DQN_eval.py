@@ -98,7 +98,7 @@ if __name__ == "__main__":
             num_episodes += 1
     
     env.monitor.evaluate()
-    save_path = args.save_dir+'/'+st(args.rv_rate)+'log.pkl'
+    save_path = args.save_dir+'/'+str(args.rv_rate)+'log.pkl'
     env.monitor.evaluate()
     env.monitor.save_to_pickle(file_name = save_path)
     algo.stop()
